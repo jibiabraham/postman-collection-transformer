@@ -57,7 +57,8 @@ describe('v2.0.0 to v1.0.0', function () {
                 }, options)))).to.eql({
                     id: '4b546663-ab04-4b39-a629-930bb53b7fac',
                     headerData: [],
-                    url: ''
+                    url: '',
+                    responses_order: []
                 });
             });
         });
@@ -235,7 +236,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             preRequestScript: 'console.log("Foo");',
                             tests: 'console.log("Foo");',
                             queryParams: [],
-                            url: ''
+                            url: '',
+                            responses_order: ['Res1']
                         }]
                     });
 
@@ -355,7 +357,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: '',
                         headerData: [],
                         collectionId: 'C1',
-                        name: 'request one'
+                        name: 'request one',
+                        responses_order: []
                     }],
                     folders: [{
                         id: 'F1',
@@ -436,7 +439,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         headers: '',
                         headerData: [],
                         queryParams: [],
-                        pathVariableData: []
+                        pathVariableData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -477,7 +481,8 @@ describe('v2.0.0 to v1.0.0', function () {
                     headers: '',
                     headerData: [],
                     queryParams: [],
-                    pathVariableData: []
+                    pathVariableData: [],
+                    responses_order: []
                 });
                 done();
             });
@@ -532,7 +537,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -585,7 +591,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -633,7 +640,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -684,7 +692,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -734,7 +743,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -784,7 +794,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -835,7 +846,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -885,7 +897,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         responses: [],
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     }]
                 });
                 done();
@@ -973,7 +986,8 @@ describe('v2.0.0 to v1.0.0', function () {
                                 binary: {
                                     contentType: 'application/json'
                                 }
-                            }
+                            },
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1030,7 +1044,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             queryParams: [],
                             headerData: [],
                             dataMode: 'raw',
-                            rawModeData: '[{ key: \'foo\', value: \'bar\', disabled: true }]'
+                            rawModeData: '[{ key: \'foo\', value: \'bar\', disabled: true }]',
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1095,7 +1110,8 @@ describe('v2.0.0 to v1.0.0', function () {
                                 key: 'foo',
                                 value: 'bar'
                             }],
-                            dataOptions: {}
+                            dataOptions: {},
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1160,7 +1176,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: 'https://postman-echo.com/get',
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1194,7 +1211,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: 'https://postman-echo.com/get',
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1230,7 +1248,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: 'https://postman-echo.com/get',
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1291,7 +1310,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             responses: [],
                             pathVariableData: [],
                             queryParams: [],
-                            headerData: []
+                            headerData: [],
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1346,7 +1366,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             responses: [],
                             pathVariableData: [],
                             queryParams: [],
-                            headerData: []
+                            headerData: [],
+                            responses_order: []
                         }],
                         protocolProfileBehavior: {
                             disableBodyPruning: true
@@ -1416,7 +1437,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             responses: [],
                             pathVariableData: [],
                             queryParams: [],
-                            headerData: []
+                            headerData: [],
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1469,7 +1491,8 @@ describe('v2.0.0 to v1.0.0', function () {
                             responses: [],
                             pathVariableData: [],
                             queryParams: [],
-                            headerData: []
+                            headerData: [],
+                            responses_order: []
                         }]
                     });
                     done();
@@ -1512,7 +1535,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: 'https://postman-echo.com/get',
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1547,7 +1571,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         url: 'https://postman-echo.com/get',
                         pathVariableData: [],
                         queryParams: [],
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1590,7 +1615,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         auth: { type: 'noauth' },
                         headers: '',
                         url: '',
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1615,7 +1641,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         auth: null,
                         headers: '',
                         url: '',
-                        headerData: []
+                        headerData: [],
+                        responses_order: []
                     });
                     done();
                 });
@@ -1719,7 +1746,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         { key: '', value: '' },
                         { key: null, value: null },
                         { key: 'beta', value: null }
-                    ]
+                    ],
+                    responses_order: []
                 });
             });
         });
@@ -1759,7 +1787,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         { key: '', value: '' },
                         { key: null, value: null },
                         { key: 'beta', value: null }
-                    ]
+                    ],
+                    responses_order: []
                 });
             });
         });
@@ -1799,7 +1828,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         id: 'R1',
                         collectionId: '2509a94e-eca1-43ca-a8aa-0e200636764f',
                         headerData: [],
-                        url: ''
+                        url: '',
+                        responses_order: []
                     }],
                     order: []
                 });
@@ -2051,7 +2081,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         helperAttributes: { id: 'bearer', token: 'random' },
                         auth: { type: 'bearer', bearer: [{ key: 'token', value: 'random', type: 'string' }] },
                         headerData: [{ key: 'header_foo', value: 'header_bar', description: null }],
-                        queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }]
+                        queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
+                        responses_order: []
                     }]
                 });
             });
@@ -2096,7 +2127,8 @@ describe('v2.0.0 to v1.0.0', function () {
                     rawModeData: null,
                     graphqlModeData: null,
                     headerData: [{ key: 'header_foo', value: 'header_bar', description: null }],
-                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }]
+                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
+                    responses_order: []
                 });
             });
         });
@@ -2126,7 +2158,8 @@ describe('v2.0.0 to v1.0.0', function () {
                     headerData: [],
                     headers: '',
                     pathVariableData: [],
-                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }]
+                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
+                    responses_order: []
                 });
             });
         });
@@ -2170,7 +2203,8 @@ describe('v2.0.0 to v1.0.0', function () {
                     rawModeData: null,
                     graphqlModeData: null,
                     headerData: [{ key: 'header_foo', value: 'header_bar', description: null }],
-                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }]
+                    queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
+                    responses_order: []
                 });
             });
         });
@@ -2201,7 +2235,8 @@ describe('v2.0.0 to v1.0.0', function () {
                     rawModeData: 'foobar',
                     graphqlModeData: null,
                     dataDisabled: false,
-                    url: 'https://postman-echo.com/get'
+                    url: 'https://postman-echo.com/get',
+                    responses_order: []
                 });
             });
         });
@@ -2240,7 +2275,8 @@ describe('v2.0.0 to v1.0.0', function () {
                         variables: '{"foo":"bar"}'
                     },
                     dataDisabled: false,
-                    url: 'https://postman-echo.com/get'
+                    url: 'https://postman-echo.com/get',
+                    responses_order: []
                 });
             });
         });
