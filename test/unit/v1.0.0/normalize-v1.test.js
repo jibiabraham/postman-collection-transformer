@@ -2621,7 +2621,9 @@ describe('v1.0.0 normalization', function () {
                     helperAttributes: { id: 'bearer', token: 'random' },
                     headerData: [{ key: 'header_foo', value: 'header_bar', description: null }],
                     queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
-                    pathVariableData: [{ id: 'pv1', key: 'pv_foo', value: 'pv_bar', description: null, type: 'string' }],
+                    pathVariableData: [
+                        { id: 'pv1', key: 'pv_foo', value: 'pv_bar', description: null, type: 'string' }
+                    ],
                     responses_order: []
                 });
             });
@@ -2651,7 +2653,9 @@ describe('v1.0.0 normalization', function () {
                     helperAttributes: { id: 'bearer', token: 'random' },
                     headerData: [{ key: 'header_foo', value: 'header_bar', description: null }],
                     queryParams: [{ key: 'query_foo', value: 'query_bar', description: null }],
-                    pathVariableData: [{ id: 'pv1', key: 'pv_foo', value: 'pv_bar', description: null, type: 'string' }],
+                    pathVariableData: [
+                        { id: 'pv1', key: 'pv_foo', value: 'pv_bar', description: null, type: 'string' }
+                    ],
                     responses_order: []
                 });
             });
